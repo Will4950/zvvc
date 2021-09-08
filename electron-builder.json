@@ -4,7 +4,8 @@
     "copyright": "Will Hughes",
     "directories": {
         "app": ".",
-        "output": "out"
+        "output": "out",
+        "buildResources": "build"
     },
     "files": [
         "package.json",

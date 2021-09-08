@@ -29,8 +29,7 @@ const getmic = () => {
    if (store.get('microphone') == undefined){
        store.set('microphone', config.microphone);
    }
-   store.get('microphone');
-   console.log(store.get('microphone'));
+   return store.get('microphone');
 }
 
 module.exports = socketapi;
