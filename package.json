@@ -5,7 +5,8 @@
   "main": "app.js",
   "scripts": {
     "start": "electron .",
-    "css-compile": "node-sass --output-style expanded --source-map true --source-map-contents true --precision 8 scss/custom.scss public/stylesheets/compiled.css"
+    "css-compile": "node-sass --output-style expanded --source-map true --source-map-contents true --precision 8 scss/custom.scss public/stylesheets/compiled.css",
+    "postinstall": "npm run css-compile"
   },
   "author": "Will Hughes",
   "license": "ISC",
