@@ -1,0 +1,34 @@
+{
+  "name": "zvvc",
+  "version": "1.0.0",
+  "description": "zoom virtual volume control",
+  "main": "app.js",
+  "scripts": {
+    "start": "electron .",
+    "css-compile": "node-sass --output-style expanded --source-map true --source-map-contents true --precision 8 scss/custom.scss public/stylesheets/compiled.css"
+  },
+  "author": "Will Hughes",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Will4950/zvvc.git"
+  },
+  "devDependencies": {
+    "electron": "^14.0.0",
+    "node-sass": "^6.0.0"
+  },
+  "dependencies": {
+    "@fontsource/lato": "^4.5.0",
+    "@fortawesome/fontawesome-free": "^5.15.4",
+    "bootstrap": "^5.1.1",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "express-session": "^1.17.2",
+    "express-winston": "^4.2.0",
+    "jquery": "^3.6.0",
+    "pug": "^3.0.2",
+    "socket.io": "^4.2.0",
+    "systeminformation": "^5.8.7",
+    "winston": "^3.3.3"
+  }
+}

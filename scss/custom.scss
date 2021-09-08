@@ -1,0 +1,25 @@
+@import "../node_modules/@fontsource/lato/scss/mixins";
+$font-family-base:Lato;
+$headings-font-family:Lato;
+
+$theme-colors: (
+    "primary": #0E71EB,
+    "secondary": #ced2d8,
+    "success": #27874C,
+    "info": #F26D21,
+    "warning": #747487,
+    "danger": #E02828,
+    "light": #F2F2F7,
+    "dark": #09294f
+);
+
+$enable-grid-classes:true;
+$enable-gradients:true;
+$enable-rounded:true;
+
+$fa-font-path: "fontawesome";
+@import "../node_modules/@fortawesome/fontawesome-free/scss/fontawesome";
+@import "../node_modules/@fortawesome/fontawesome-free/scss/solid";
+@import "../node_modules/@fortawesome/fontawesome-free/scss/brands";
+@import "../node_modules/@fortawesome/fontawesome-free/scss/regular";
+@import "../node_modules/bootstrap/scss/bootstrap";

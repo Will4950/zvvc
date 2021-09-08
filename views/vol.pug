@@ -1,0 +1,5 @@
+each val, index in pids
+    .card.iv-card.shadow.mb-2
+        label.card-header.bg-primary.text-white.form-label='Zoom App ' + val
+        .card-body
+            input.form-range(type='range' min='0' max='100' value='100' onchange='setVol(this)' id=val)
