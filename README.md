@@ -1,5 +1,6 @@
-# zvvc
-zoom virtual volume control
+# zvvc - zoom virtual volume control
+![zvvc](zvvc.png)
+
 
 # Getting Started
 
