@@ -2,11 +2,12 @@
   "name": "zvvc",
   "version": "1.0.0",
   "description": "zoom virtual volume control",
-  "main": "app.js",
+  "main": "app/main.js",
   "scripts": {
     "start": "electron .",
-    "css-compile": "node-sass --output-style expanded --source-map true --source-map-contents true --precision 8 scss/custom.scss public/stylesheets/compiled.css",
-    "postinstall": "npm run css-compile"
+    "css-compile": "node-sass --output-style expanded --source-map true --source-map-contents true --precision 8 app/scss/custom.scss app/public/stylesheets/compiled.css",
+    "postinstall": "npm run css-compile",
+    "pack": "electron-builder --win portable --publish never"
   },
   "author": "Will Hughes",
   "license": "ISC",
@@ -16,6 +17,7 @@
   },
   "devDependencies": {
     "electron": "^14.0.0",
+    "electron-builder": "^22.11.7",
     "node-sass": "^6.0.0"
   },
   "dependencies": {
@@ -23,6 +25,7 @@
     "@fortawesome/fontawesome-free": "^5.15.4",
     "bootstrap": "^5.1.1",
     "dotenv": "^10.0.0",
+    "electron-json-config": "^1.5.3",
     "express": "^4.17.1",
     "express-session": "^1.17.2",
     "express-winston": "^4.2.0",

@@ -6,6 +6,10 @@
 
 These instructions will get you a copy of the project up and running on your local machine. 
 
+Grab the latest executable from [releases](https://github.com/Will4950/zvvc/releases)
+
+# Building locally
+
 **Prerequisites:**
 * [Node.js 14](https://nodejs.org/)
 * [git](https://git-scm.com/downloads)
@@ -26,20 +30,12 @@ npm start
 
 # Change the microphone
 
-Create a `.env` file in the `zvvc` directory.
+Run zvvc at least 1 time and close the application.  Open `%APPDATA%\zvvc\config.json` in a text editor.
 
-```bash
-notepad .env
+```json
+{"microphone":"YOUR DEVICE"}
 ```
-
-Click yes to create a new file. Copy the following into this file, replacing `YOUR DEVICE` with your microphone device name.
-
-```bash
-MICROPHONE=YOUR DEVICE
-```
-
->NOTE: Run SoundVolumeView.exe to get the device name.
-
+Replace `YOUR DEVICE` with your microphone device name.  Save the file.
 
 # Support
 

@@ -8,13 +8,13 @@ const app = express();
 
 app.set('port', config.port);
 app.set('view engine', 'pug');
-app.set('views', 'views');
+app.set('views', __dirname + '\\..\\views');
 
-app.use(express.static('public/js'));
-app.use(express.static('public/stylesheets'));
-app.use(express.static('node_modules/bootstrap/dist/js'));
-app.use(express.static('node_modules/jquery/dist'));
-app.use('/fontawesome', express.static('node_modules/@fortawesome/fontawesome-free/webfonts'));
+app.use(express.static(__dirname + '/../public/js'));
+app.use(express.static(__dirname + '/../public/stylesheets'));
+app.use(express.static(__dirname + '/../../node_modules/bootstrap/dist/js'));
+app.use(express.static(__dirname + '/../../node_modules/jquery/dist'));
+app.use('/fontawesome', express.static(__dirname + '/../../node_modules/@fortawesome/fontawesome-free/webfonts'));
 app.use(expressWinston.logger({winstonInstance: logger}));
 app.use(sessionmw);
 app.use(routes);

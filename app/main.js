@@ -1,4 +1,3 @@
-
 const config = require('./src/config');
 const logger = require('./src/logger');
 
