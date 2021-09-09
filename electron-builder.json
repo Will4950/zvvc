@@ -3,7 +3,6 @@
     "productName": "Zoom Virtual Volume Control",
     "copyright": "Will Hughes",
     "directories": {
-        "app": ".",
         "output": "out",
         "buildResources": "build"
     },
@@ -17,5 +16,8 @@
     ],
     "win": {
         "target": "nsis"
+    },
+    "nsis": {
+        "oneClick": false
     }
 }

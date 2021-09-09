@@ -1,13 +1,14 @@
 {
   "name": "zvvc",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "zoom virtual volume control",
   "main": "app/main.js",
   "scripts": {
     "start": "electron .",
     "css-compile": "node-sass --output-style expanded --source-map true --source-map-contents true --precision 8 app/scss/custom.scss app/public/stylesheets/compiled.css",
     "postinstall": "npm run css-compile",
-    "pack": "electron-builder --win portable --publish never"
+    "pack": "electron-builder --win portable --publish never",
+    "pack.installer": "electron-builder --win --publish never"
   },
   "author": "Will Hughes",
   "license": "ISC",
